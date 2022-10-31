@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@drawable/customborder"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imgBack"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/ic_baseline_arrow_back_24" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="9"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="Sửa thông tin"
+            android:textAlignment="gravity"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <EditText
+            android:id="@+id/edtFullnameU"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/round_border"
+            android:drawableLeft="@drawable/ic_baseline_drive_file_rename_outline_24"
+            android:hint="Fullname"
+            android:padding="10dp"
+
+            />
+
+        <EditText
+            android:id="@+id/edtPhoneU"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edtFullnameU"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/round_border"
+            android:drawableLeft="@drawable/ic_baseline_phone_enabled_24"
+            android:hint="Số điện thoại"
+            android:padding="10dp" />
+
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btnUpdateInfor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cập nhật thông tin"
+        android:backgroundTint="@color/black"
+        android:layout_margin="10dp"/>
+
+    <Button
+        android:id="@+id/btnCancle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="#C6C6C6"
+        android:text="Hủy"
+        android:textColor="@color/black"/>
+
+</LinearLayout>

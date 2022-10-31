@@ -1,0 +1,359 @@
+{
+	"info": {
+		"_postman_id": "11f2d58f-b2d6-4854-9b97-0d4c6613b7f0",
+		"name": "AppChat",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "14127029"
+	},
+	"item": [
+		{
+			"name": "Account",
+			"item": [
+				{
+					"name": "get all",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://we1-contact.herokuapp.com/api/accounts",
+							"protocol": "https",
+							"host": [
+								"we1-contact",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"accounts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "username",
+									"value": "lich",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "111",
+									"type": "text"
+								},
+								{
+									"key": "fullname",
+									"value": "Tran Van Lich",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/api/accounts/register",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"accounts",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "username",
+									"value": "duong",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "111",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/api/accounts",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"accounts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update account",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "phone",
+									"value": "0000000009",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "avt",
+									"type": "file",
+									"src": "/D:/Image/vietcombank.jpg",
+									"disabled": true
+								},
+								{
+									"key": "fullname",
+									"value": "Ha Van Phong",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "password",
+									"value": "222",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/api/accounts/6336548ded19940c854685d7",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"accounts",
+								"6336548ded19940c854685d7"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Post",
+			"item": [
+				{
+					"name": "get all post",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/posts",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"posts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create post",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "content",
+									"value": "ảo thật",
+									"type": "text"
+								},
+								{
+									"key": "img",
+									"type": "file",
+									"src": "/D:/Image/hvd.jpg",
+									"disabled": true
+								},
+								{
+									"key": "id_acc",
+									"value": "6338108c8e5d9c41342224a7",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/api/posts",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"posts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete post",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/posts/633659146c7a4a10e434532e",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"posts",
+								"633659146c7a4a10e434532e"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update post",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "like",
+									"value": "100",
+									"type": "text"
+								},
+								{
+									"key": "content",
+									"value": "HHAHAHAAA",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/api/posts/633659146c7a4a10e434532e",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"posts",
+								"633659146c7a4a10e434532e"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Comment",
+			"item": [
+				{
+					"name": "getall",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://we1-contact.herokuapp.com/api/comments/633659e86c7a4a10e4345332",
+							"protocol": "https",
+							"host": [
+								"we1-contact",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"comments",
+								"633659e86c7a4a10e4345332"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create comment",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "content",
+									"value": "hahhaaa",
+									"type": "text"
+								},
+								{
+									"key": "id_acc",
+									"value": "6338001a5fd56f62b6da0914",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/api/comments/633800295fd56f62b6da0916",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"comments",
+								"633800295fd56f62b6da0916"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete comment",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/comments/633800595fd56f62b6da091c",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"comments",
+								"633800595fd56f62b6da091c"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

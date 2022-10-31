@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Home.HomeFragment">
+
+        <LinearLayout
+            android:id="@+id/lstt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/origin"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:padding="10dp">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:cardCornerRadius="40dp">
+
+                    <ImageView
+                        android:id="@+id/imgAvt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_baseline_person_24" />
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/img_status_on_off"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    app:cardCornerRadius="7.5dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_baseline_circle_24"
+                        app:tint="#11DF15" />
+
+                </androidx.cardview.widget.CardView>
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/tvCreatePost"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="10dp"
+                android:background="@drawable/custom_bg_stt"
+                android:hint="  Bạn đang nghĩ gì?"
+                android:padding="10px"
+                android:textSize="25dp" />
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/revPosts"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/lstt"
+            android:background="@color/background_color"
+            android:layoutAnimation="@anim/layout_left_to_right"
+            android:padding="10dp" />
+
+
+    </RelativeLayout>
+</layout>
